@@ -14,12 +14,26 @@ def convert_to_absolute() -> float:
 
 def use_prefixes() -> List[str]:
     prefixes, suffixes = 'JKLMNOP', 'ack'
+    resultat = []
+    for loop in prefixes:  
+        nom = loop + suffixe
+        resultat.append(nom)
+    return resultat
 
-    return [""]
 
-
+nbPremier = 0
+somme = 0
+nb = 2
 def prime_integer_summation() -> int:
-    return 0
+    while(nbPremier<10):
+        for diviseur in range(2,nb+1): 
+            if nb % diviseur == 0 and diviseur != nb:
+                break
+            if nb % diviseur == 0 and diviseur == nb:
+                somme += nb
+                nbPremier += 1
+        nb += 1
+    return somme
 
 
 def factorial(number: int) -> int:
