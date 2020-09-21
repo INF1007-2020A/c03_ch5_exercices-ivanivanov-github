@@ -21,11 +21,11 @@ def use_prefixes() -> List[str]:
     return resultat
 
 
-nbPremier = 0
-somme = 0
-nb = 2
-def prime_integer_summation() -> int:
-    while(nbPremier<10):
+def prime_integer_summation():
+    nbPremier = 0
+    somme = 0
+    nb = 2
+    while(nbPremier<100):
         for diviseur in range(2,nb+1): 
             if nb % diviseur == 0 and diviseur != nb:
                 break
@@ -33,7 +33,7 @@ def prime_integer_summation() -> int:
                 somme += nb
                 nbPremier += 1
         nb += 1
-    return somme
+    return print(somme)
 
 
 def factorial(number: int) -> int:
