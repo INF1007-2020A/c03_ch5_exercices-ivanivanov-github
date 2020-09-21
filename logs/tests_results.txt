@@ -1,6 +1,6 @@
 test_factorial (__main__.TestExercice) ... FAIL
 test_prefixes (__main__.TestExercice) ... ERROR
-test_summation (__main__.TestExercice) ... ERROR
+test_summation (__main__.TestExercice) ... FAIL
 
 ======================================================================
 ERROR: test_prefixes (__main__.TestExercice)
@@ -11,16 +11,6 @@ Traceback (most recent call last):
   File "/home/runner/work/c03_ch5_exercices-ivanivanov-github/c03_ch5_exercices-ivanivanov-github/exercice.py", line 19, in use_prefixes
     nom = loop + suffixe
 NameError: name 'suffixe' is not defined
-
-======================================================================
-ERROR: test_summation (__main__.TestExercice)
-----------------------------------------------------------------------
-Traceback (most recent call last):
-  File "test_exercice.py", line 33, in test_summation
-    output = exercice.prime_integer_summation()
-  File "/home/runner/work/c03_ch5_exercices-ivanivanov-github/c03_ch5_exercices-ivanivanov-github/exercice.py", line 28, in prime_integer_summation
-    while(nbPremier<10):
-UnboundLocalError: local variable 'nbPremier' referenced before assignment
 
 ======================================================================
 FAIL: test_factorial (__main__.TestExercice)
@@ -37,7 +27,15 @@ First differing element 0:
 - [0, 0, 0, 0]
 + [1, 6, 40320, 3628800] : Erreur dans le remplacement de caractère
 
+======================================================================
+FAIL: test_summation (__main__.TestExercice)
 ----------------------------------------------------------------------
-Ran 3 tests in 0.001s
+Traceback (most recent call last):
+  File "test_exercice.py", line 38, in test_summation
+    'Retrait du mauvais caractère'
+AssertionError: None != 24133 : Retrait du mauvais caractère
 
-FAILED (failures=1, errors=2)
+----------------------------------------------------------------------
+Ran 3 tests in 0.004s
+
+FAILED (failures=2, errors=1)
