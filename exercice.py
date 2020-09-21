@@ -16,7 +16,7 @@ def use_prefixes() -> List[str]:
     prefixes, suffixes = 'JKLMNOP', 'ack'
     resultat = []
     for loop in prefixes:  
-        nom = loop + suffixe
+        nom = loop + suffixes
         resultat.append(nom)
     return resultat
 
