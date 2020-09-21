@@ -33,7 +33,7 @@ def prime_integer_summation():
                 somme += nb
                 nbPremier += 1
         nb += 1
-    return print(somme)
+    return somme
 
 
 def factorial(number: int) -> int:
