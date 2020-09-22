@@ -44,7 +44,10 @@ def factorial(number: int) -> int:
 
 
 def use_continue() -> None:
-    pass
+    for i in range(1,11):
+        if i == 5:
+            continue
+        print(i)
 
 
 def main() -> None:
